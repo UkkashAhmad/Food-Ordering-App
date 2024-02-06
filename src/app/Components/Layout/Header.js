@@ -26,7 +26,7 @@ function AuthLinks({ status, userName }) {
   if (status === "unauthenticated") {
     return (
       <>
-        <Link href={"/login"}> Login</Link>
+        <Link href={"/login"}className="bg-green-500 rounded-full text-white px-8 py-2" > Login</Link>
         <Link
           className="bg-primary rounded-full text-white px-8 py-2"
           href={"/register"}
