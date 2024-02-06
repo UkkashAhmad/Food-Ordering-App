@@ -82,7 +82,7 @@ if(cartProducts?.length === 0 ){
   return (
     <section className="mt-8 text-center">
       <SectionHeaders mainHeader='Cart' />
-      <p className="mt04">Your shopping cart is empty</p>
+      <p className="mt-4">Your shopping cart is empty</p>
     </section>
   )
 }
@@ -93,7 +93,7 @@ if(cartProducts?.length === 0 ){
       <div className="text-center">
         <SectionHeaders mainHeader="Cart" />
       </div>
-      <div className="mt-8 grid gap-8 grid-cols-2">
+      <div className="mt-8 md:grid gap-8 grid-cols-2">
         <div>
           {cartProducts?.length === 0 && (
             <div>No products in your shopping cart</div>
@@ -102,7 +102,7 @@ if(cartProducts?.length === 0 ){
             cartProducts.map((product, index) => (
               <CartProduct key={index} product={product} onRemove={removeCartProduct} index={index} />
             ))}
-          <div className="py-4 flex justify-end pr-16 items-center">
+          <div className="py-2 flex justify-end pr-16 items-center">
             <div className="text-gray-500">
               Subtotal: <br /> Delivery: <br /> Total:
             </div>
